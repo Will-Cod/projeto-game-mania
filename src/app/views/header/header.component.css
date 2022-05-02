@@ -1,0 +1,154 @@
+header{
+    background-color: #111111;
+    height: 191px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+.container-grid{
+    width: 1200px;
+    height: 141px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+.contatoEsquerdo{
+    display: flex;
+    justify-content: space-between;
+    width: 350px;
+    height: 141px;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+}
+.contatoEsquerdo img{
+    margin-right: 5px;
+}
+.contatoDireito{
+    display: flex;
+    justify-content: space-between;
+    width: 350px;
+    height: 141px;
+    margin: 0 auto;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+}
+.contatoDireito img{
+    margin-right: 5px;
+}
+.contato_logar{
+    margin-right: 10px;
+}
+.contato a{
+    color: white;
+    text-decoration: none;
+}
+
+.logopesquisa{
+    width: 500px;
+    height: 111px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 30px;
+}
+.search_input{
+    margin-top: 10px;
+    width: 400px;
+    height: 30px;
+    border-radius: 40px;
+    text-align: center;
+    border: 0;
+}
+.logopesquisa button{
+   border: none;
+   border-radius: 40px;
+   width: 30px;
+   height: 30px;
+   background-color: transparent;
+   
+}
+.divbusca button{
+    background-color: transparent;
+    border: 0px;
+    position: relative;
+    right: 42px;
+    bottom: 0px;
+}
+.linha_menu{
+    border: 0 solid;
+    height: 1px;
+    color: #2DBB00;
+    margin: 0 auto;
+    
+}
+.menuCategorias{
+    width: 1200px;
+    height: 49px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+}
+.categoria{
+    background-color: #111111;
+    height: 49px;
+    list-style: none;
+    display: flex;
+}
+.menuCategorias a{
+    color: white;
+    text-decoration: none;
+    margin-left: 7px;
+    margin-right: 7px;
+}
+.menuCategorias span{
+    margin-left: 5px;
+}
+@media screen and (max-width: 768px) {
+    .header{
+        height: 130px;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 10;
+    }
+    .container-grid{
+        width: 768px;
+        height: 130px;
+        
+    }
+    .contatoEsquerdo{
+        display: none;
+    }
+    .logopesquisa{
+        align-items: center;
+        
+    }
+    
+    .contatoDireito{
+        display: none;
+    }
+    .categoria{
+        position: relative;
+        
+    }
+    .menuCategorias{
+    /* display: none; */
+    background-color: #373636;
+    flex-direction: column;
+    position: absolute;
+    width: 200px;
+    height: 300px;
+    align-items: unset;
+    padding-left: 20px;
+    }
+    .menuCategorias img{
+        display: none;
+    }
+}
